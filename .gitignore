@@ -1,0 +1,88 @@
+# ==========================================
+# MARKNOVA - Git Ignore Configuration
+# ==========================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Streamlit Local Credentials & Secrets
+.streamlit/credentials.toml
+.streamlit/secrets.toml
+
+# ==========================================
+# PRIVACY & SENSITIVE DATA EXCLUSIONS
+# Strictly exclude student marksheets & DBs
+# ==========================================
+data/*
+!data/.gitkeep
+*.pdf
+!docs/*.pdf
+*.db
+*.db-shm
+*.db-wal
+*.sqlite*
+*.csv
+*.xlsx
+*.xls
+
+# Generated Reports & Export Output
+reports/*
+!reports/.gitkeep
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+
+# IDEs and Operating System metadata
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Log files
+*.log
